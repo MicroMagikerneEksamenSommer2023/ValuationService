@@ -42,7 +42,7 @@ namespace ValuationService.Models
         this.CustomerEmail = customerEmail;
         this.ValuationPrice = 0.0;
         this.ValuationReason = string.Empty;
-        this.Status = "Pending";
+        this.Status = "pending";
        }
        public Valuation(string id,string title, string description, string customerEmail, double valuationPrice, string valuationReason, string status)
        {
