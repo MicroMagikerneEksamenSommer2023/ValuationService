@@ -29,6 +29,7 @@ namespace ValuationService.Models
         [JsonConstructor]
        public ValuationData(string id, double valuationPrice, string valuationReason, string status)
        {
+        this.Id = id;
         this.ValuationPrice = valuationPrice;
         this.ValuationReason = valuationReason;
         this.Status = status;
