@@ -28,7 +28,7 @@ namespace ValuationService.Services
         _valuations = database.GetCollection<ValuationDB>(_config["collection"]);
     }
 
-    public async Task<bool> CreateCatalogItem(List<IFormFile> pictures ,Valuation data)
+    public async Task<bool> CreateValuationRequest(List<IFormFile> pictures ,Valuation data)
         {
             
             List<string> paths = await picService.SavePicture(pictures);

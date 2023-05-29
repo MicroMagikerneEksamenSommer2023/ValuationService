@@ -37,12 +37,12 @@ public class ValuationController : ControllerBase
     {
         try
         {
-            bool insertedStatus = await dBService.CreateCatalogItem(images, data);
-            return Ok(new { message = "Catalog item created successfully.", insertedStatus });
+            bool insertedStatus = await dBService.CreateValuationRequest(images, data);
+            return Ok(new { message = "Valuation requested.", insertedStatus });
         }
         catch (Exception ex)
         {
-            return StatusCode(500, new { error = "Failed to create catalog item." });
+            return StatusCode(500, new { error = "Failed to create valuation request." });
         }
     }
     [HttpGet("getall")]
